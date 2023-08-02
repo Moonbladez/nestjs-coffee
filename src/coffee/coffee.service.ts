@@ -13,8 +13,9 @@ export class CoffeeService {
       flavors: ['chocolate', 'vanilla'],
     },
   ];
-  create(createCoffeeDto: CreateCoffeeDto) {
-    return 'This action adds a new coffee';
+  create(createCoffeeDto: any) {
+    this.coffees.push(createCoffeeDto);
+    return createCoffeeDto;
   }
 
   findAll() {
