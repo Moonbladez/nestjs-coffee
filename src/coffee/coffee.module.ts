@@ -4,6 +4,6 @@ import { CoffeeController } from './coffee.controller';
 
 @Module({
   controllers: [CoffeeController],
-  providers: [CoffeeService]
+  providers: [CoffeeService],
 })
 export class CoffeeModule {}
