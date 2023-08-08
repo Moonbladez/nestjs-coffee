@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { CoffeeRatingModule } from './coffee-rating/coffee-rating.module';
 import { CoffeeModule } from './coffee/coffee.module';
 import { EventModule } from './event/event.module';
+import { CommonModule } from './common/common.module';
 
 @Module({
   //configservice
@@ -28,6 +29,7 @@ import { EventModule } from './event/event.module';
     CoffeeModule,
     EventModule,
     CoffeeRatingModule,
+    CommonModule,
   ],
 })
 export class AppModule {}
