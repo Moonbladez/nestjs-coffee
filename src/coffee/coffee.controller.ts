@@ -42,13 +42,13 @@ export class CoffeeController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update one coffee' })
-  update(@Param('id') id: string, @Body() updateCoffeeDto: UpdateCoffeeDto) {
+  update(@Param('id') id: number, @Body() updateCoffeeDto: UpdateCoffeeDto) {
     return this.coffeeService.update(+id, updateCoffeeDto);
   }
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete one coffee' })
-  remove(@Param('id') id: string) {
-    return this.coffeeService.remove(+id);
+  remove(@Param('id') id: number) {
+    return this.coffeeService.remove(id);
   }
 }
