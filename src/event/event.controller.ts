@@ -10,14 +10,15 @@ import {
 import { EventService } from './event.service';
 import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiBody, ApiTags } from '@nestjs/swagger';
 
-@Controller('event')
-@ApiTags('event')
+@Controller('Event')
+@ApiTags('Event')
 export class EventController {
   constructor(private readonly eventService: EventService) {}
 
   @Post()
+  @ApiBody({ type: [CreateEventDto] })
   create(@Body() createEventDto: CreateEventDto) {
     return this.eventService.create(createEventDto);
   }

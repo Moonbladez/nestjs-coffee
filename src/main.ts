@@ -28,8 +28,8 @@ async function bootstrap() {
     .setTitle('Coffee API')
     .setDescription('The coffee API description')
     .setVersion('1.0')
-    .addTag('coffee')
-    .addTag('event')
+    .addTag('Coffee')
+    .addTag('Event')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
