@@ -12,7 +12,7 @@ import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
 import { ApiBody, ApiTags } from '@nestjs/swagger';
 
-@Controller('Event')
+@Controller('event')
 @ApiTags('Event')
 export class EventController {
   constructor(private readonly eventService: EventService) {}
