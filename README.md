@@ -54,4 +54,11 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Endpoints
+Swagger containing endpoints is running locally on
+```bash
+http://localhost:3000/api
+```
+
+
 
